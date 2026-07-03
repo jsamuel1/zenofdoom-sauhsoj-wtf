@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=238602380102:domainName=sauhsoj.wtf:region=us-east-1": {
+    "Id": "/hostedzone/Z4H08ENA2IGTK",
+    "Name": "sauhsoj.wtf."
+  },
+  "hosted-zone:account=238602380102:domainName=sauhsoj.wtf:region=ap-southeast-4": {
+    "Id": "/hostedzone/Z4H08ENA2IGTK",
+    "Name": "sauhsoj.wtf."
+  }
+}
