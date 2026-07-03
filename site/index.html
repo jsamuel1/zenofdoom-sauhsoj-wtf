@@ -7,10 +7,13 @@
 <meta name="description" content="A meditative word puzzle with a dark secret. Spin letters, build words, and watch serene Zen scenes slowly reveal the Doom-like creatures hidden within.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- "Zen Old Mincho": part of Google's Zen Fonts collection (Yoshimichi Ohira) —
-     a Japanese brush-serif mincho face with full Latin glyphs, for the "Zen" half.
-     "UnifrakturMaguntia": traditional blackletter/Fraktur, for the "Doom" half. -->
-<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<!-- "Buda": condensed display face with an East Asian calligraphic character,
+     for the "Zen" half — only weight 300 (Light) is actually published for
+     this family, so that's the only weight requested/used.
+     "Grenze Gotisch": modern blackletter/gothic revival — same broken-letterform
+     gothic structure as traditional Fraktur, with the ornamental swashes toned
+     down for legibility — for the "Doom" half. -->
+<link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Grenze+Gotisch:wght@700&display=swap" rel="stylesheet">
 <style>
   :root { color-scheme: dark; }
   body {
@@ -33,14 +36,14 @@
     letter-spacing: -0.02em;
   }
   h1 .zen {
-    font-family: "Zen Old Mincho", serif;
-    font-weight: 700;
+    font-family: "Buda", serif;
+    font-weight: 300;
     letter-spacing: 0.01em;
   }
   h1 .doom {
     color: #c0392b;
-    font-family: "UnifrakturMaguntia", cursive;
-    font-weight: 400;
+    font-family: "Grenze Gotisch", cursive;
+    font-weight: 700;
     letter-spacing: 0.02em;
   }
   p.tagline {
