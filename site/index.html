@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zen Word of Doom</title>
 <meta name="description" content="A meditative word puzzle with a dark secret. Spin letters, build words, and watch serene Zen scenes slowly reveal the Doom-like creatures hidden within.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- "Zen Old Mincho": part of Google's Zen Fonts collection (Yoshimichi Ohira) —
+     a Japanese brush-serif mincho face with full Latin glyphs, for the "Zen" half.
+     "UnifrakturMaguntia": traditional blackletter/Fraktur, for the "Doom" half. -->
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 <style>
   :root { color-scheme: dark; }
   body {
@@ -26,7 +32,17 @@
     margin: 0;
     letter-spacing: -0.02em;
   }
-  h1 .doom { color: #c0392b; }
+  h1 .zen {
+    font-family: "Zen Old Mincho", serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  h1 .doom {
+    color: #c0392b;
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
   p.tagline {
     color: #a8a8a8;
     max-width: 42ch;
@@ -50,12 +66,22 @@
 </head>
 <body>
 
-<h1>Zen Word <span class="doom">of Doom</span></h1>
+<h1><span class="zen">Zen Word</span> <span class="doom">of Doom</span></h1>
 <p class="tagline">Calm on the surface. Something is watching underneath.
 A meditative word puzzle for iPhone — spin letters, build words, and
 slowly reveal the Doom-like creature hidden in every serene scene.</p>
 
 <div class="links">
+  <!-- App Store badge: activate once the app has a public listing.
+       Download the official "Download on the App Store" badge SVG from
+       https://developer.apple.com/app-store/marketing/guidelines/#section-badges
+       (self-host per Apple's guidelines — do not hotlink), save it as
+       /appstore-badge.svg, and replace APP_ID below with the real numeric id
+       from the App Store Connect listing (apps.apple.com/app/idAPP_ID).
+  <a href="https://apps.apple.com/app/idAPP_ID">
+    <img src="/appstore-badge.svg" alt="Download on the App Store" height="40">
+  </a>
+  -->
   <a class="link" href="/privacy">Privacy Policy</a>
 </div>
 
